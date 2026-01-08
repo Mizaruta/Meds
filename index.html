@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Suivi Médicaments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+</script>
+</head>
+
+<body>
+
+  <div id="theme-toggle">☀️</div>
+  <div id="app"></div>
+
+  <script src="components/navbar.js"></script>
+  <script src="components/card.js"></script>
+  <script src="components/meds.js"></script>
+  <script src="components/home.js"></script>
+  <script src="components/history.js"></script>
+  <script src="components/stats.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
